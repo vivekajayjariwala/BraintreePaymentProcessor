@@ -1,0 +1,34 @@
+<div class="grid-container fade-in-up">
+  <p-card>
+    <div class="svg-icon">
+      <img src="../../assets/paypal_logo.svg" alt="SVG Icon" class="logo-icon" />
+    </div>
+    <form [formGroup]="userForm" (ngSubmit)="processPayment()">
+      <div class="grid-container">
+        <div class="field">
+          <label class="block">Card Number</label>
+          <div id="card-number" class="hosted-field" formControlName="number"></div>
+        </div>
+        <div class="field">
+          <label class="block">Postal Code</label>
+          <div id="postal-code" class="hosted-field" formControlName="postal"></div>
+        </div>
+        <div class="field">
+          <label class="block">CVV Code</label>
+          <div id="cvv" class="hosted-field" formControlName="cvv"></div>
+        </div>
+        <div class="field">
+          <label class="block">Expiry Date</label>
+          <div id="expiration-date" class="hosted-field" formControlName="date"></div>
+        </div>
+      </div>
+      <p-button
+        label="Purchase"
+        type="submit"
+        class="submit"
+        styleClass="p-button-outlined"
+      ></p-button>
+      <p-messages [enableService]="false" [closable]="false"></p-messages>
+    </form>
+  </p-card>
+</div>

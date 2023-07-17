@@ -1,0 +1,64 @@
+.svg-icon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px;
+  position: static;
+}
+
+.svg-icon img {
+  width: 3rem;
+  height: 2rem;
+  display: block;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.field {
+  width: 49%;
+}
+
+label {
+  padding-bottom: 0.5rem;
+  padding-top: 0.75rem;
+  display: block;
+}
+
+input {
+  width: 100%;
+  display: block;
+}
+
+.submit {
+  padding-top: 1.5rem;
+  display: inline-table;
+  color: #00457C !important;
+}
+
+:host ::ng-deep .p-button{
+  font-weight:lighter;
+}
+
+
+.logo-icon{
+  filter: invert(40%) sepia(83%) saturate(7496%) hue-rotate(188deg) brightness(100%) contrast(101%);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1.5s ease-in-out;
+}
